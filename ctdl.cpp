@@ -129,6 +129,7 @@ int Ins(Tree& t,int x)
     {
         ver* tmp=get_ver(x);
         t=tmp;
+        return 1;
     }
 }
 
