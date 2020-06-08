@@ -140,15 +140,14 @@ void show(const Tree& a)
     show(a->left);
     show(a->right);
 }
+int del_ver(Tree& a,int x);
 
 int leftleft(Tree& a)
 {
     if(a->left==NULL)
     {
         int data=a->data;
-        a=NULL;
-        ver* cur=a;
-        delete cur;
+        del_ver(a,data);
         return data;
     }
     return leftleft(a->left);
